@@ -1,0 +1,5 @@
+// Retrieve the logged in user's username
+        $username = $_SESSION["username"];
+
+        // Prepare the SQL statement to retrieve the tickets for the logged in user
+        $sql = "SELECT * FROM tickets WHERE username='$username'";
